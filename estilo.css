@@ -36,7 +36,7 @@ body {
   margin-left: 20px;
   margin-top: 22px;
 }
-.pratos {
+.pratos, .liquido, .sobremesa {
   background-color: rgba(255, 255, 255, 1);
   width: 172px;
   height: 216px;
