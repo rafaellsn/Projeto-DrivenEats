@@ -5,7 +5,7 @@ body {
   width: 414px;
   height: 750px;
 }
-.caixa {
+.caixa1, .caixa2, .caixa3 {
   display: flex;
   overflow-x: scroll;
 }
@@ -36,7 +36,7 @@ body {
   margin-left: 20px;
   margin-top: 22px;
 }
-.pratos, .bebida, .sobremesa {
+.pratos,  .sobremesa {
   background-color: rgba(255, 255, 255, 1);
   width: 172px;
   height: 216px;
