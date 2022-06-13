@@ -7,7 +7,7 @@
 }
 
     function selecionaItem2 (elemento) {
-    let Botaoclicado = document.querySelector(".pratos .bebida .selecionado");
+    let Botaoclicado = document.querySelector(".selecionado");
     if (Botaoclicado !== null) {
         Botaoclicado.classList.toggle("selecionado");  
     }
