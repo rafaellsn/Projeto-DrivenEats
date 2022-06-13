@@ -36,11 +36,11 @@ function verificaSeTemTresSelecionados() {
   }
 
   function enviaProWhats(elemento){
-    const prato = document.querySelector(".pratos .selecionado .texto-prato").textContent;
-    const bebida = document.querySelector(".sobremesa .selecionado .texto-prato").textContent;
-    const sobremesa = document.querySelector(".sobremesa .selecionado .texto-prato").textContent;
+    console.log(document.querySelector(".pratos .selecionado .texto-prato"))
 
-    let custoPrato = document.querySelector(".pratos .selecionado .valor").textContent;
+
+
+    let custoPrato = document.querySelector(".caixa3 .selecionado .valor").textContent;
     let custoBebida = document.querySelector("sobremesa .selecionado .valor").textContent;
     let custoSobremesa = document.querySelector(".sobremesa .selecionado .valor").textContent;
 
@@ -53,7 +53,10 @@ function verificaSeTemTresSelecionados() {
     console.log(msg2);
     let encoded = encodeURIComponent(msg2);
   
-    window.open(msg1 + encoded, "_blank");
+    window.location.href = msg1 + encoded;
+    console.log();
+
+
   }
   
   
