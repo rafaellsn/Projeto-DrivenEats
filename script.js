@@ -4,6 +4,8 @@
         Botaoclicado.classList.toggle("selecionado");  
     }
     elemento.classList.add("selecionado");
+    verificaSeTemTresSelecionados();
+
 }
 
     function selecionaItem1 (elemento) {
@@ -12,6 +14,7 @@
         Botaoclicado.classList.toggle("selecionado");  
     }
     elemento.classList.add("selecionado");
+    verificaSeTemTresSelecionados();
 
 }
 function selecionaItem2 (elemento) {
@@ -20,7 +23,19 @@ function selecionaItem2 (elemento) {
         Botaoclicado.classList.toggle("selecionado");  
     }
     elemento.classList.add("selecionado");
+    verificaSeTemTresSelecionados();
+
 
 }
 
-
+function verificaSeTemTresSelecionados() {
+    let lista = document.querySelectorAll(".selecionado");
+    const fecharPedido = document.querySelector(".caixa-texto");
+    if (lista.length == 3) {
+      fecharPedido.classList.add("fecharPedido");
+      fecharPedido.innerHTML = "Fechar pedido";
+    } else {
+      fecharPedido.classList.remove("fecharPedido");
+      fecharPedido.innerHTML = "Selecione os 3 itens para fechar o pedido";
+    }
+  }

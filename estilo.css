@@ -91,6 +91,9 @@ body {
   border-radius: 50px;
   bottom: 16px;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+  
 }
 .escrita {
     line-height: 43px;
@@ -109,4 +112,5 @@ body {
 
 .fecharPedido{
   outline: 4px #32B72F solid;
+  background: #32B72F;
 }
